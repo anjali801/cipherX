@@ -485,16 +485,24 @@ export function renderLanding(appEl) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        if (entry.target.classList.contains('feature-row')) {
+          entry.target.classList.add('animate-in');
+        } else {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  document.querySelectorAll('.pain-card, .feature-row, .step-card, .testimonial-card, .pricing-card').forEach(el => {
+  document.querySelectorAll('.pain-card, .step-card, .testimonial-card, .pricing-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.feature-row').forEach(el => {
     observer.observe(el);
   });
 

@@ -432,6 +432,51 @@
     background: var(--bg-page);
 }
 
+/* Staggered fade-in-up on feature text children */
+.feature-text .feature-icon,
+.feature-text .feature-tag,
+.feature-text h3,
+.feature-text p,
+.feature-text .feature-bullets {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.feature-row.animate-in .feature-text .feature-icon {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.feature-row.animate-in .feature-text .feature-tag {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.feature-row.animate-in .feature-text h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.feature-row.animate-in .feature-text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.35s;
+}
+
+.feature-row.animate-in .feature-text .feature-bullets {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+.feature-row.animate-in .feature-visual {
+    animation: fadeIn 0.8s ease 0.3s both;
+}
+
 .features-eyebrow {
     text-align: center;
     font-size: 12px;
@@ -529,6 +574,41 @@
 
 .feature-mini-table {
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scanning light beam overlay */
+.feature-mini-table::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(180deg,
+            transparent,
+            rgba(124, 58, 237, 0.08),
+            rgba(124, 58, 237, 0.15),
+            rgba(124, 58, 237, 0.08),
+            transparent);
+    animation: scanBeam 3s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes scanBeam {
+    0% {
+        top: -40px;
+    }
+
+    50% {
+        top: 100%;
+    }
+
+    100% {
+        top: -40px;
+    }
 }
 
 .feature-mini-table th {
@@ -538,12 +618,16 @@
     color: var(--text-secondary);
     padding: 8px;
     border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 2;
 }
 
 .feature-mini-table td {
     padding: 10px 8px;
     font-size: 13px;
     border-bottom: 1px solid rgba(196, 181, 232, 0.3);
+    position: relative;
+    z-index: 2;
 }
 
 /* ---- HOW IT WORKS ---- */

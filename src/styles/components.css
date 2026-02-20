@@ -177,11 +177,37 @@
 .severity-critical {
     background: var(--danger-bg);
     color: var(--danger);
+    animation: severityPulse 2s ease-in-out infinite;
 }
 
 .severity-high {
     background: #FFF1F0;
     color: #CF1322;
+    animation: severityPulseHigh 2.5s ease-in-out infinite;
+}
+
+@keyframes severityPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 8px 3px rgba(192, 57, 43, 0.2);
+    }
+}
+
+@keyframes severityPulseHigh {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(207, 19, 34, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 6px 2px rgba(207, 19, 34, 0.15);
+    }
 }
 
 .severity-medium {
