@@ -981,21 +981,21 @@
 /* ---- FOOTER ---- */
 .footer {
     background: var(--purple-footer);
-    padding: 60px 0 40px;
+    padding: 72px 0 44px;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: var(--space-10);
-    margin-bottom: var(--space-10);
+    gap: var(--space-12);
+    margin-bottom: var(--space-12);
 }
 
 .footer-brand .logo {
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-5);
 }
 
 .footer-brand .logo svg {
@@ -1007,14 +1007,14 @@
     font-family: var(--font-display);
     font-weight: 700;
     font-size: 18px;
-    color: var(--bg-page);
+    color: #f3f0fa;
 }
 
 .footer-brand .tagline {
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: var(--space-5);
+    font-size: 14px;
+    color: rgba(243, 240, 250, 0.65);
+    line-height: 1.7;
+    margin-bottom: var(--space-6);
     max-width: 280px;
 }
 
@@ -1027,32 +1027,34 @@
     width: 36px;
     height: 36px;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-secondary);
+    color: rgba(243, 240, 250, 0.6);
     font-size: 16px;
     transition: all var(--transition-fast);
 }
 
 .footer-social a:hover {
     color: var(--hover-glow);
-    background: rgba(124, 58, 237, 0.2);
+    background: rgba(124, 58, 237, 0.25);
 }
 
 .footer-col h4 {
     font-size: 14px;
     font-weight: 600;
-    color: var(--bg-page);
-    margin-bottom: var(--space-5);
+    color: #f3f0fa;
+    margin-bottom: var(--space-6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .footer-col a {
     display: block;
-    font-size: 13px;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-3);
+    font-size: 14px;
+    color: rgba(243, 240, 250, 0.55);
+    margin-bottom: var(--space-4);
     transition: color var(--transition-fast);
 }
 
@@ -1061,8 +1063,8 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid var(--purple-deep);
-    padding-top: var(--space-5);
+    border-top: 1px solid rgba(243, 240, 250, 0.1);
+    padding-top: var(--space-6);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1070,7 +1072,7 @@
 
 .footer-bottom .copyright {
     font-size: 13px;
-    color: var(--text-secondary);
+    color: rgba(243, 240, 250, 0.45);
 }
 
 .footer-bottom .badges {
@@ -1079,11 +1081,13 @@
 }
 
 .footer-bottom .badge {
-    padding: 4px 10px;
-    background: var(--purple-deep);
+    padding: 6px 14px;
+    background: rgba(124, 58, 237, 0.2);
+    border: 1px solid rgba(124, 58, 237, 0.3);
     border-radius: var(--radius-full);
     font-size: 11px;
-    color: var(--text-secondary);
+    font-weight: 500;
+    color: rgba(243, 240, 250, 0.7);
 }
 
 /* ---- RESPONSIVE ---- */

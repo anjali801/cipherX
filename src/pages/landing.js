@@ -111,10 +111,10 @@ function renderPainSection() {
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front pain-card">
-              <div class="pain-icon" style="background:var(--danger-bg);color:var(--danger);">🧠</div>
+              <div class="pain-icon" style="background:rgba(91,46,191,0.1);color:var(--purple-mid);">🧠</div>
               <h3>The Black Box Problem</h3>
               <p>Developers aren't cryptographers. They copy-paste deprecated algorithms like MD5, use insecure defaults, and accidentally hardcode master keys into source code.</p>
-              <span class="pain-tag" style="background:var(--danger-bg);color:var(--danger);">Root Cause</span>
+              <span class="pain-tag" style="background:var(--bg-card);color:var(--purple-mid);">Root Cause</span>
             </div>
             <div class="flip-card-back">
               <div class="flip-back-icon">🔧</div>
@@ -127,10 +127,10 @@ function renderPainSection() {
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front pain-card">
-              <div class="pain-icon" style="background:var(--warning-bg);color:var(--warning);">👻</div>
+              <div class="pain-icon" style="background:rgba(91,46,191,0.1);color:var(--purple-mid);">👻</div>
               <h3>You Can't Secure What You Can't See</h3>
               <p>Cryptography exists across thousands of microservices your security team never approved, documented, or has any visibility into.</p>
-              <span class="pain-tag" style="background:var(--warning-bg);color:var(--warning);">Blind Spot</span>
+              <span class="pain-tag" style="background:var(--bg-card);color:var(--purple-mid);">Blind Spot</span>
             </div>
             <div class="flip-card-back">
               <div class="flip-back-icon">📦</div>
