@@ -420,7 +420,6 @@ export function renderLanding(appEl) {
     ${renderPainSection()}
     ${renderFeaturesSection()}
     ${renderStepsSection()}
-    ${renderTestimonialsSection()}
     ${renderIntegrationsSection()}
     ${renderPricingSection()}
     ${renderCTABanner()}
