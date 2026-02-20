@@ -108,23 +108,53 @@ function renderPainSection() {
     <div class="container">
       <h2 class="section-title">Why Cryptographic Security Keeps Failing</h2>
       <div class="pain-grid">
-        <div class="pain-card">
-          <div class="pain-icon" style="background:var(--danger-bg);color:var(--danger);">🧠</div>
-          <h3>The Black Box Problem</h3>
-          <p>Developers aren't cryptographers. They copy-paste deprecated algorithms like MD5, use insecure defaults, and accidentally hardcode master keys into source code.</p>
-          <span class="pain-tag" style="background:var(--danger-bg);color:var(--danger);">Root Cause</span>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front pain-card">
+              <div class="pain-icon" style="background:var(--danger-bg);color:var(--danger);">🧠</div>
+              <h3>The Black Box Problem</h3>
+              <p>Developers aren't cryptographers. They copy-paste deprecated algorithms like MD5, use insecure defaults, and accidentally hardcode master keys into source code.</p>
+              <span class="pain-tag" style="background:var(--danger-bg);color:var(--danger);">Root Cause</span>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-back-icon">🔧</div>
+              <h3>CipherX Solution</h3>
+              <p>Automated detection of every cryptographic function — with guided, copy-paste fixes tailored to your framework.</p>
+              <a href="#features" class="btn btn-primary btn-sm" style="margin-top:auto;">Learn More →</a>
+            </div>
+          </div>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon" style="background:var(--warning-bg);color:var(--warning);">👻</div>
-          <h3>You Can't Secure What You Can't See</h3>
-          <p>Cryptography exists across thousands of microservices your security team never approved, documented, or has any visibility into.</p>
-          <span class="pain-tag" style="background:var(--warning-bg);color:var(--warning);">Blind Spot</span>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front pain-card">
+              <div class="pain-icon" style="background:var(--warning-bg);color:var(--warning);">👻</div>
+              <h3>You Can't Secure What You Can't See</h3>
+              <p>Cryptography exists across thousands of microservices your security team never approved, documented, or has any visibility into.</p>
+              <span class="pain-tag" style="background:var(--warning-bg);color:var(--warning);">Blind Spot</span>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-back-icon">📦</div>
+              <h3>Full CBOM Inventory</h3>
+              <p>Real-time cryptographic bill of materials across every repo, container, and infrastructure component.</p>
+              <a href="#features" class="btn btn-primary btn-sm" style="margin-top:auto;">Learn More →</a>
+            </div>
+          </div>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon" style="background:rgba(91,46,191,0.1);color:var(--purple-mid);">🔔</div>
-          <h3>Drowning in False Positives</h3>
-          <p>Legacy SAST tools flood SOC teams with thousands of flagged issues daily. Critical vulnerabilities get buried in the noise.</p>
-          <span class="pain-tag" style="background:var(--bg-card);color:var(--purple-mid);">Operational Failure</span>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front pain-card">
+              <div class="pain-icon" style="background:rgba(91,46,191,0.1);color:var(--purple-mid);">🔔</div>
+              <h3>Drowning in False Positives</h3>
+              <p>Legacy SAST tools flood SOC teams with thousands of flagged issues daily. Critical vulnerabilities get buried in the noise.</p>
+              <span class="pain-tag" style="background:var(--bg-card);color:var(--purple-mid);">Operational Failure</span>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-back-icon">🎯</div>
+              <h3>Context-Aware Scoring</h3>
+              <p>98% false positive reduction. Only the vulnerabilities that actually matter reach your team.</p>
+              <a href="#features" class="btn btn-primary btn-sm" style="margin-top:auto;">Learn More →</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
